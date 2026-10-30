@@ -141,3 +141,101 @@ Linkage Criterion: Applied Ward's minimum variance method (scipy.cluster.hierarc
 Dendrogram Visualization: Plotted hierarchical tree branches with a defined Euclidean cut threshold to isolate distinct housing clusters.
 Cluster Assignment: Extracted flat cluster assignments (fcluster) to validate against K-Means groupings.
 
+
+<h1>Principal Component Analysis (PCA)</h1>
+
+Objective
+
+To reduce the dimensionality of the Melbourne Housing Dataset while retaining maximum information from the numerical features.
+Features Used
+
+Rooms
+Price
+Distance
+Landsize
+Propertycount
+
+<h2>Methodology</h2>
+
+Load the Melbourne Housing Dataset.
+
+Select the five numerical features.
+
+Remove missing values and extreme Landsize outliers.
+
+Standardize the features using StandardScaler.
+
+Apply PCA to reduce five features into two principal components.
+
+Calculate the explained variance ratio.
+
+Visualize the results using a scatter plot and explained variance bar chart.
+
+<h2>Results</h2>
+
+Reduced the dataset to two principal components.
+
+Analyzed the variance retained by each component.
+
+Visualized the distribution of observations in two dimensions.
+
+<h2>Conclusion</h2>
+
+PCA helps reduce data complexity and makes it easier to visualize high-dimensional housing data while retaining important information.
+
+<h1>Simple Linear Regression (SLR)</h1>
+
+<h2>Objective</h2>
+
+To predict house prices based on their distance from the Central Business District (CBD) using Simple Linear Regression.
+
+Variables Used
+
+Independent Variable (X): Distance
+
+Dependent Variable (Y): Price
+
+<h2>Methodology</h2>
+
+Load the Melbourne Housing Dataset.
+
+Select Distance and Price columns.
+
+Remove missing values and extreme Landsize outliers.
+
+Split the dataset into 80% training and 20% testing data.
+
+Train a Linear Regression model.
+
+Predict house prices using the trained model.
+
+Evaluate the model using MAE, MSE, and R² Score.
+
+Visualize the regression line and compare actual versus predicted prices.
+
+<h2>Evaluation Metrics</h2>
+
+MAE: Measures the average absolute prediction error.
+
+MSE: Measures the average squared prediction error.
+
+R² Score: Measures how much variation in house prices is explained by Distance.
+
+<h2>Conclusion</h2>
+
+Simple Linear Regression helps identify the relationship between distance from the CBD and house prices. It also provides a basic model for predicting housing prices using a single independent variable.
+
+<h3>Technologies Used</h3>
+
+Python
+Google Colab
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Scikit-learn
+Dataset
+
+Melbourne Housing Dataset
+
+Source: https://raw.githubusercontent.com/salemprakash/EDA/main/Data/melb_data.csv
