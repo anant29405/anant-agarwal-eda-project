@@ -236,6 +236,3 @@ Seaborn
 Scikit-learn
 Dataset
 
-Melbourne Housing Dataset
-
-Source: https://raw.githubusercontent.com/salemprakash/EDA/main/Data/melb_data.csv
